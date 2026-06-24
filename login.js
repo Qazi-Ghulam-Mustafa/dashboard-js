@@ -27,16 +27,19 @@ function login() {
 
     var isValid = true;
 
-    // Email Validation
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (userEmail === "") {
+    // Email Validation
+
+    if (email.value.trim() == "") {
         emailError.innerText = "Please Enter Your Email";
         isValid = false;
     }
-    else if (!emailPattern.test(userEmail)) {
+    else if (!email.value.includes("@")) {
         emailError.innerText = "Please Enter a Valid Email";
         isValid = false;
+    }
+    else {
+        emailError.innerText = "";
     }
 
     // Password Validation
