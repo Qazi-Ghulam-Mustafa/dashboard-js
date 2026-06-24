@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+   
+    <div id="sidebar" class="sidebar">
+        <h2>Dashboard</h2>
+
+
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+
+    <div class="main-content">
+        <h1 class="content">
+            Welcome
+            <b id="userEmail"></b>
+
+        </h1>
+
+        <h3 class="content">
+            Hi
+            <b id="userName"></b>
+        </h3>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu Button -->
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <div>
+            <h2>Dashboard</h2>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+    </aside>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="welcome-card">
+            <h1>
+                Welcome 👋
+            </h1>
+
+            <p class="email">
+                <b id="userEmail"></b>
+            </p>
+
+            <h3>
+                Hi, <b id="userName"></b> 🚀
+            </h3>
+
+            <p class="subtitle">
+                Glad to see you back on your dashboard.
+            </p>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
